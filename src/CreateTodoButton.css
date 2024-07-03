@@ -1,0 +1,16 @@
+.TodoButton{
+    border-radius: 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #eee;
+    color: #fff;
+    background-color: #a05dac;
+    margin-left: 5px;
+}
+
+.TodoButton:hover{
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    color: #fff;
+    background-color: #774181;
+    transition: .5s ease-out;
+}
