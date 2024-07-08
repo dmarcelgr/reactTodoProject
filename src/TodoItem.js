@@ -1,18 +1,24 @@
 import './TodoItem.css'
+import { FaCheck } from "react-icons/fa";
+import { FaMinus } from "react-icons/fa";
+
+
 function TodoItem(props){
     return (
         <li className="TaskItem">
             <button
+                onClick={props.onComplete}
                 className={`MarkedAsDone MarkedAsDone-check ${props.completed && "MarkedAsDone-check--active"}`}>
-                v
+                <FaCheck />
             </button>
             <span
                 className={`TaskItem - p ${props.completed && "TaskItem-p--completed"}`}>
                 {props.text}
             </span>
             <button
+                onClick={props.onDelete}
                 className="CloseTaskB">
-                x
+                <FaMinus />
             </button>
         </li>
     );
